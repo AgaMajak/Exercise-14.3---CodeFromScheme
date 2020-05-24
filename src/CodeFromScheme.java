@@ -13,9 +13,10 @@ public class CodeFromScheme {
             Scanner scan = new Scanner(System.in);
             System.out.println("Podaj cyfrę");
             x = scan.nextInt();
-            sum += x;
+            if (pow(x, 2) < 100) {
+                sum += x;
+            }
         }
-
         sum = sum % 2;
 
         System.out.println(sum);
